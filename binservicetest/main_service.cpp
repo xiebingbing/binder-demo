@@ -11,13 +11,22 @@
 
 using namespace android;
 
-int main(int argc, char* argv[]){
-    ALOGE("test instantiate start");
-    TestService::instantiate();
-    ProcessState::self()->startThreadPool();
-    IPCThreadState::self()->joinThreadPool();
-    ALOGE("test instantiate end");
-    return 0; 
-
+#include<stdio.h>
+ 
+int main(){
+ 
+    int i=0;
+ 
+    for(i;i<100;i++)
+ 
+    {
+ 
+      sleep(180);
+ 
+      printf("i have a dream!\n");
+ 
+    }
+ 
+    return 0;
+ 
 }
-
